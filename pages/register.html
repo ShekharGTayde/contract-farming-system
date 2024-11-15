@@ -1,38 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - Contract Farming</title>
-    <link rel="stylesheet" href="./style.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            background-color: green;
+            padding: 15px;
+        }
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            margin: 25px;
+            text-decoration: underline;
+        }
+
+        #registerForm {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            justify-content: center;
+            justify-items: center;
+            margin-left: 25%;
+            border: 2px solid #18cc52;
+            border-radius: 5px;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <h1>Contract Farming System</h1>
     </header>
-    
+
     <main>
         <h2>Register</h2>
         <form id="registerForm">
             <label for="name">Name:</label>
-            <input type="text" id="name" required>
-            
+            <input type="text" id="name" required style="    padding: 8px;    margin: 10px;">
+
             <label for="role">Role:</label>
-            <select id="role" required>
+            <select id="role" required style="    padding: 8px;    margin: 10px;">
                 <option value="farmer">Farmer</option>
                 <option value="buyer">Buyer</option>
             </select>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            
+            <input type="email" id="email" required style="    padding: 8px;    margin: 10px;">
+
             <label for="password">Password:</label>
-            <input type="password" id="password" required>
-            
-            <button type="submit">Register</button>
+            <input type="password" id="password" required style="   padding: 8px;    margin: 10px;">
+
+            <button type="submit" style="    padding: 15px;
+            margin: 10px;
+            background-color: green;
+            border-radius: 5px;">Register</button>
         </form>
     </main>
     <script src="./script.js"></script>
 
 </body>
+
 </html>
